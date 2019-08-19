@@ -8,9 +8,9 @@ class Counter extends React.Component{
     }
     render(){
         return (
-            <div className='mt-3'>
+            <div className='container mt-3'>
                 <div className='row'>
-                    <div className="col-4 d-flex justify-content-center">   
+                    <div className="col-4 d-flex justify-content-around">   
                         <input type="button" value="-"  onClick={()=>this.setState({x1:this.state.x1-1})}/>
                         <div className='text-center m-3'>
                             {this.state.x1}
@@ -21,7 +21,7 @@ class Counter extends React.Component{
                     </div>
 
 
-                    <div className="col-4 d-flex justify-content-center">
+                    <div className="col-4 d-flex justify-content-around">
                         <input type="button" value="-"  onClick={()=>this.setState({x2:this.state.x2-1})}/>
                         <div className='text-center m-3'>
                             {this.state.x2}
@@ -31,7 +31,7 @@ class Counter extends React.Component{
                         <input type="button" value="+" onClick={()=>this.setState({x2:this.state.x2+1})}/>  
                     </div>
 
-                    <div className="col-4 d-flex justify-content-center">
+                    <div className="col-4 d-flex justify-content-around">
                         <input type="button" value="-" onClick={()=>this.setState({x3:this.state.x3-1})}/>
                         <div className='text-center m-3'>
                             {this.state.x3}
